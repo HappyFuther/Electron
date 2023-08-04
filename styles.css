@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+
+* {
+    font-family: Papyrus;!important
+}
+
+input.form-control {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+select.form-control  {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+table thead tr:first-child th{
+    width: 10%;
+    font-size: 12pt;
+    border: none;
+}
+
+
+table thead tr:last-child th{
+    font-size: 6pt;
+    font-style: italic;
+    border: none;
+}
+
+table thead tr{
+    border: none;
+}
+
+table.custom tbody td {
+    align-items: center;
+    height: 100px;
+    width: 10%;
+    vertical-align: middle;
+}
+
+table.gregorian tbody td {
+    align-items: center;
+    height: 60px;
+    width: 14%;
+    vertical-align: middle;
+}
