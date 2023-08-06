@@ -7,7 +7,7 @@
     "start": "electron ./main.js",
     "build": "electron-builder --win --ia32"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/HappyFuther/Electron-Custom-Calendar",
   "keywords": [
     "Electron",
     "quick",
@@ -26,6 +26,10 @@
   },
   "dependencies": {
     "@electron/remote": "^2.0.10",
-    "jquery": "^3.7.0"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.1",
+    "jquery": "^3.7.0",
+    "node-notifier": "^10.0.1",
+    "sqlite3": "^5.1.6"
   }
 }
