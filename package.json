@@ -1,19 +1,20 @@
 {
   "name": "restoration-calendar",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Restoration calendar application",
   "main": "main.js",
   "scripts": {
     "start": "electron ./main.js",
     "build": "electron-builder --win --ia32"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "build-win": "electron-packager . --platform=win32 --asar --prune --arch=ia32 --extra-resource=./extraResources/* --icon=./icon.ico --out ./dist --overwrite",
+  "repository": "https://github.com/HappyFuther/Electron-Custom-Calendar",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Custom",
+    "Calendar",
+    "Restoration",
+    "Notification"
   ],
   "author": "Genera",
   "license": "CC0-1.0",
@@ -26,6 +27,10 @@
   },
   "dependencies": {
     "@electron/remote": "^2.0.10",
-    "jquery": "^3.7.0"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.1",
+    "jquery": "^3.7.0",
+    "node-notifier": "^10.0.1",
+    "sqlite3": "^5.1.6"
   }
 }
